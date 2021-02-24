@@ -202,7 +202,7 @@ a{
     border-radius: 0.2rem;
 }
 
-#toggle,.bars,.sm-brand{
+#toggle,.bars,.sm-brand,.sm-team{
     display: none;
 }
 /* hero */
@@ -803,6 +803,10 @@ footer h3{
         line-height: 1;
     }
 
+    .sm-team{
+        display: inline-block;
+    }
+
     /*services */
     .sm-flex-20{
         flex: 0 1 15%;
@@ -819,7 +823,9 @@ footer h3{
     width: 100%;
     padding: 0.2rem 0;
 }
-
+.lg-team{
+    display: none;
+}
 .sm-trusted h2{
     font-size: 2rem;
     font-weight: 900;
