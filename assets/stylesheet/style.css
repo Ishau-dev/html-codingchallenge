@@ -72,7 +72,7 @@ body{
     max-width: 1380px;
     width: 100%;
     margin: 0 auto;  
-    padding: 0 2rem;
+    padding: 0 6rem;
 }
 
 a{
@@ -99,12 +99,16 @@ a{
     justify-content: center;
 }
 
+.flex-66{
+    flex: 0 1 66%;
+}
+
 .padding{
-    padding: 0 8rem;
+    padding: 0 13rem;
 }
 
 .content-padding{
-    padding: 2rem 0;
+    padding: 8rem 0;
 }
 
 .flex-33{
@@ -121,8 +125,13 @@ a{
 .flex-60{
     flex: 0 1 60%;
 }
-.flex-grow{
-    flex: 0 ;
+.flex-items{
+    flex: 0 1 6%;
+    
+}
+
+.flex-item{
+    flex: 0 1 40%;
 }
 
 .flex-25{
@@ -169,6 +178,8 @@ a{
     margin-bottom: 1rem;
 }
 
+
+
 .social a{
     margin-left: 1rem;
     color: white;
@@ -179,8 +190,9 @@ a{
 }
 
 .nav-item a{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: var(--primary);
+    font-weight: 700;
 }
 
 .active-btn a{
@@ -190,6 +202,9 @@ a{
     border-radius: 0.2rem;
 }
 
+#toggle,.bars,.sm-brand{
+    display: none;
+}
 /* hero */
 .hero-content{
     position: relative;
@@ -256,7 +271,7 @@ a{
 
 .welcome-hero {
     position: absolute;
-    margin-left: 8rem;    
+    margin-left: 17rem;    
 }
 
 .active{
@@ -269,10 +284,10 @@ a{
 }
 
 .welcome-hero h1{
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: var(--primary);
     font-weight: 900;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.2;
 }
 
@@ -289,7 +304,7 @@ a{
 
 .services-active h2{
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 3rem;
 }
 
@@ -353,21 +368,23 @@ a{
     position: absolute;
     width: 30%;
     bottom: 0;
-    right: 22%;
+    right: 14.5%;
+    top: 25%;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 3.7rem;
+    padding: 2.5rem;
 }
 
 
 
 .trusted h2{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 900;
 }
 
 .trusted p{
     font-size: 0.8rem;
     margin-bottom: 1rem;
+    padding: 4rem 0;;
 }
 
 /* col3 */
@@ -397,24 +414,27 @@ a{
 }
 
 /* col4 */
-
 .col4 .padding{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding: 0 0 0 15rem;
 }
-
 .col4 h2{
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+.flex-40{
+    flex: 0 1 40%;
 }
 
+.col4-scroll{
+    margin-left: 5px;
+}
 .col4 p{
     font-size: 0.7rem;
 }
 .col4 img{
-    height: 275px;
-    
+    height: 282px;
+      
 }
 
 .flex-15{
@@ -434,10 +454,7 @@ a{
     margin: 1rem 0;
 }
 
-.col6 .padding{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
+
 
 .col6-item{
     background-color: rgb(241, 247, 255);
@@ -690,4 +707,162 @@ footer h3{
 
 .pagination h3{
     font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 16px;
+    }
+    .container{
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;  
+        padding: 0 2rem;
+    }
+
+    .top-navbar{
+        display: none;
+    }
+
+    .sm-navbar{
+        
+    }
+
+    .nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        background-color: rgba(255, 101, 106);
+        height: 100vh;
+        padding-top: 6rem;
+        z-index: 9;
+    }
+
+    .nav-item a{
+        font-size: 0.7rem;
+        color: white;
+        font-weight: 700;
+    }
+
+    #toggle:checked ~ nav{
+        display: inline-block;
+    }
+
+    .sm-brand{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary);
+        display: inline-block;
+        z-index: 80;
+    }
+
+    .brand{
+        display: none;
+    }
+
+    .sm-column{
+        flex-direction: column;
+    }
+
+    .bars{
+        display: inline-block;
+        color: var(--secondary);
+        padding-top: 5px;
+        z-index: 99;
+        position: absolute;
+        right: 10%;
+        color: var(--primary);
+    }
+
+    .sm-btn-menu a{
+        background-color: var(--primary);
+        display: block;
+    }
+
+    .hero-content img{
+        display: none;
+    }
+
+    .welcome-hero{
+        position: relative;
+        margin-left: 2rem;  
+        padding: 3rem 0;
+    }
+
+    .welcome-hero h2{
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .welcome-hero h1{
+        font-size: 2.5rem;
+        color: var(--primary);
+        font-weight: 900;
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    /*services */
+    .sm-flex-20{
+        flex: 0 1 15%;
+    }
+
+    .sm-margin p{
+        margin-bottom: 2rem;
+    }
+
+    
+.sm-trusted{
+    background-color: unset;
+    position: unset;
+    width: 100%;
+    padding: 0.2rem 0;
+}
+
+.sm-trusted h2{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.sm-trusted p{
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+}
+  
+.col4{
+    text-align: center;
+}
+.col4 .padding{
+    padding: 0.5rem 0;
+}
+
+.col4 h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.col4 p{
+    font-size: 0.7rem;
+}
+.col4 img{
+    height: 300px;
+    margin-top: 1rem;     
+}  
+
+.foot-nav li{
+    margin-right: 10px;
+}
+
+.sm-row{
+    flex-direction: row;
+}
+
+.col6-item{
+    margin-top: 2rem;
+}
+
 }
