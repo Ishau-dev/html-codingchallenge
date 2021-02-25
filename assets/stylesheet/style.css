@@ -576,6 +576,7 @@ footer h3{
 .foot-social a{
     margin-right: 1rem;
     color: var(--primary);
+    margin-bottom: 1rem;
 }
 
 .foot-social{
@@ -867,6 +868,56 @@ footer h3{
 
 .col6-item{
     margin-top: 2rem;
+}
+
+.case .flex-wrap{
+    
+}
+
+
+.case{
+    position: relative;
+}
+.strategy{
+    position: relative;
+    background-color: var(--primary);
+    padding: 1rem;
+    bottom: 0;
+    font-size: 0.8rem;
+    width: 100%;
+    color: white;
+}
+
+.strategy-top{
+    position: relative;
+    background-color: var(--primary);
+    padding: 1rem;
+    bottom: 50%;
+    font-size: 0.8rem;
+    width: 100%;
+    color: white;
+}
+
+
+.strategy-top h2{
+    font-weight: 700;
+}
+
+
+.strategy h2{
+    font-weight: 700;
+}
+
+.calender-card{
+    background-color: var(--secondary);
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 5px;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 16rem;
+    left: 0;
+    margin-left: 3rem;   
 }
 
 }

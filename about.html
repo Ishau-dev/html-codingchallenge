@@ -26,16 +26,19 @@
     </header>
     <header>
         <div class="container flex justify-between">
-            <a href=""><img src="assets/logo/logo.png" alt=""></a>
+            <a class="brand" href=""><img src="assets/logo/logo.png" alt=""></a>
+            <a class="sm-brand" href=""><h1>Buson<span class="active">.</span> </h1></a>
+            <label class="bars" for="toggle"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" name="" id="toggle">
             <nav class="nav">
-                <ul class="nav-item flex">
+                <ul class="nav-item items-center sm-column flex">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="services.html">SERVICES</a></li>
                     <li><a href="casestudy.html">CASES</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
-                    <li class="active-btn" ><a href="contact.html">CONTACT NOW</a></li>
+                    <li class="active-btn sm-btn-menu" ><a href="contact.html">CONTACT NOW</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,9 +49,10 @@
         
         </section>
         <section class="col2 main-margin">
-            <div class="container flex padding">
-                <img class="" src="assets/team/wetrusted.jpg" alt="">
-                <div class="trusted">
+            <div class="container flex sm-column padding">
+                <img class="lg-col2 lg-team" src="assets/team/wetrusted.jpg" alt="">
+                <img class="lg-col2 sm-team" src="assets/team/team_3.jpg" alt="">
+                <div class="trusted sm-trusted">
                     <h2>We are more trusted then 5000 clients</h2>
                     <p class="content-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem ducimus pariatur ut voluptatum ab. Suscipit, ipsa doloremque veritatis nesciunt ea eos eaque eum illo, officiis cum cupiditate eius cumque.</p>
                     <div class="active-btn">
@@ -58,7 +62,7 @@
             </div>
         </section>
         <section class="services content-padding">
-            <div class="container flex justify-between padding">
+            <div class="container flex justify-between sm-column sm-margin padding">
                 <div class="flex-33 services-items">
                     <img class="full-width" src="assets/team/team_1.jpg" alt="">
                     <h2>Business Planning</h2>
@@ -94,7 +98,7 @@
         </section>
         <section class="col6 col3 main-margin ">
             <h1 class="align-center">Our Recent News</h1>
-            <div class="container flex justify-between padding lg-margin">
+            <div class="container flex justify-between padding sm-column lg-margin">
                 <div class="flex-33 col6-item justify-center">
                     <img class="full-width" src="assets/recent/rcent_1.png" alt="">
                     <div class="col6-items">
@@ -126,7 +130,7 @@
             </div>
         </section>
         <section class="col7 main-margin">
-            <div class="container flex  justify-between padding">
+            <div class="container flex sm-column justify-between padding">
                 <div class="flex-33">
                     <h1>Request for Call Back</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eum quo, eos, pariatur ut architecto commodi voluptate itaque eaque in autem doloribus aliquam quidem ullam molestias iusto repellat officia. Ipsum.</p>
@@ -152,8 +156,8 @@
         </section>
     </main>
     <footer class="contact">
-        <div class="container flex  justify-between padding">
-            <div class="column flex-25">
+        <div class="container flex sm-column justify-between padding">
+            <div class="column  flex-25">
                 <img src="assets/logo/logo2_footer.png" alt="">
                 <p class="lg-margin">ipsa beatae. Facilis et beatae doloremque. Doloremque, dolore eaque?</p>
                 <div class="flex foot-social">
@@ -166,7 +170,7 @@
             <div class="column flex-15">
                 <h3>Company</h3>
                 <nav class="foot-nav">
-                    <ul class="flex column">
+                    <ul class="flex sm-row column">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
@@ -190,7 +194,7 @@
             <div class="column flex-15">
                 <h3>Get In Touch</h3>
                 <nav class="foot-nav">
-                    <ul class="nav-item flex column">
+                    <ul class="nav-item sm-row flex column">
                         <li>214-721-8000</li>
                         <li>desmond@gmail.com</li>
                         <li>New Orleans, USA</li>
