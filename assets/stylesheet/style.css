@@ -426,6 +426,10 @@ a{
     flex: 0 1 40%;
 }
 
+.flex-6{
+    flex: 0 1 6%;
+}
+
 .col4-scroll{
     margin-left: 5px;
 }
